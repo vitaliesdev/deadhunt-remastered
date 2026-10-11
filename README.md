@@ -7,7 +7,7 @@
 [![Download](https://img.shields.io/badge/Download-Releases-b3261e?style=for-the-badge&logo=github&logoColor=white)](../../releases)
 [![Steam](https://img.shields.io/badge/Steam-REPTIX-1b2838?style=for-the-badge&logo=steam&logoColor=white)](https://steamcommunity.com/id/reptilemk/)
 [![Ko-fi](https://img.shields.io/badge/Ko--fi-Support%20me-ff5e5b?style=for-the-badge&logo=ko-fi&logoColor=white)](https://ko-fi.com/vitalies)
-[![MIT license](https://img.shields.io/badge/License-MIT-3d444d?style=for-the-badge)](LICENSE)
+[![MIT license](https://img.shields.io/badge/License-MIT-3d444d?style=for-the-badge&logo=opensourceinitiative&logoColor=white)](LICENSE)
 
 [Download](#download) · [Build it yourself](#build-it-yourself) · [Support](#support-the-project)
 
