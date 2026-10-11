@@ -1,0 +1,24 @@
+# build outputs
+/build/
+/dist/
+/d3d9.dll
+*.obj
+*.lib
+*.exp
+*.pdb
+*.exe
+__pycache__/
+
+# generated from the game's data on each machine (tools/generate.py), never committed
+/DeadhuntFX/
+
+# official upstream binaries, downloaded and hash-checked by tools/fetch_deps.py
+/third_party/dxvk/
+/third_party/openal-soft/soft_oal.dll
+
+# obsolete tools from earlier approaches
+/tools/installer/setup.*
+/tools/installer/build_setup.bat
+/tools/pack.py
+/tools/build_lang.py
+/tools/font_es.py

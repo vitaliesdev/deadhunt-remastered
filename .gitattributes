@@ -1,0 +1,10 @@
+* text=auto
+*.bat text eol=crlf
+*.iss text eol=crlf
+*.ini text eol=crlf
+tools/installer/*.txt text eol=crlf
+*.png binary
+*.jpg binary
+*.bmp binary
+*.ico binary
+*.ttf binary

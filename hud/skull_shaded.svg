@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 120" width="500" height="600">
+<defs>
+<radialGradient id="bone" cx="50%" cy="32%" r="65%">
+<stop offset="0" stop-color="#ffffff"/><stop offset=".45" stop-color="#d8d8d0"/><stop offset=".8" stop-color="#9a9a90"/><stop offset="1" stop-color="#6e6e66"/></radialGradient>
+<filter id="b2"><feGaussianBlur stdDeviation="2"/></filter>
+<filter id="b1"><feGaussianBlur stdDeviation="1"/></filter>
+<clipPath id="skull"><path id="outline" d="M50 3 C75 3 89 19 89 41 C89 49 87 54 85 57 L91 62 L88 72 L79 75 C78 83 75 88 71 92 L71 100 C71 108 65 114 57 115 L43 115
+C35 114 29 108 29 100 L29 92 C25 88 22 83 21 75 L12 72 L9 62 L15 57 C13 54 11 49 11 41 C11 19 25 3 50 3 Z"/></clipPath>
+</defs>
+<g clip-path="url(#skull)">
+<rect width="100" height="120" fill="url(#bone)"/>
+<!-- mottled bone -->
+<g filter="url(#b2)" fill="#55554c" opacity=".35">
+<ellipse cx="38" cy="16" rx="9" ry="4"/><ellipse cx="62" cy="22" rx="7" ry="3"/><ellipse cx="50" cy="30" rx="12" ry="3"/>
+</g>
+<!-- temples and cheek hollows -->
+<g filter="url(#b2)" fill="#000" opacity=".45">
+<ellipse cx="14" cy="42" rx="6" ry="13"/><ellipse cx="86" cy="42" rx="6" ry="13"/>
+<ellipse cx="30" cy="84" rx="5" ry="9"/><ellipse cx="70" cy="84" rx="5" ry="9"/>
+</g>
+<!-- brow shadow over the sockets -->
+<g filter="url(#b2)" fill="#000" opacity=".5"><path d="M17 44 L43 40 L44 47 L18 52 Z"/><path d="M83 44 L57 40 L56 47 L82 52 Z"/></g>
+<!-- cheekbone highlights -->
+<g filter="url(#b1)" fill="#fff" opacity=".6"><ellipse cx="22" cy="68" rx="7" ry="2.5"/><ellipse cx="78" cy="68" rx="7" ry="2.5"/><ellipse cx="50" cy="13" rx="14" ry="5"/></g>
+<!-- jaw / teeth -->
+<rect x="29" y="92" width="42" height="24" fill="#2a2a26"/>
+<g fill="#e4e2d6">
+<rect x="31.5" y="93" width="5" height="10" rx="1.5"/><rect x="37.5" y="93" width="5.5" height="12" rx="1.5"/><rect x="44" y="93" width="5.5" height="13" rx="1.5"/>
+<rect x="50.5" y="93" width="5.5" height="13" rx="1.5"/><rect x="57" y="93" width="5.5" height="12" rx="1.5"/><rect x="63.5" y="93" width="5" height="10" rx="1.5"/>
+<rect x="34" y="106" width="5" height="7" rx="1.5"/><rect x="40" y="107" width="5.5" height="7" rx="1.5"/><rect x="46.5" y="107" width="7" height="7" rx="1.5"/>
+<rect x="54.5" y="107" width="5.5" height="7" rx="1.5"/><rect x="61" y="106" width="5" height="7" rx="1.5"/>
+</g>
+<path d="M27 72 L33 88" stroke="#222" stroke-width="2.4"/><path d="M73 72 L67 88" stroke="#222" stroke-width="2.4"/>
+</g>
+<!-- sockets and nose: deep, with a soft rim -->
+<g fill="#121210">
+<path d="M19 47 L41 43 C45 47 46 53 44 60 C41 66 35 68 28 66 C21 63 18 56 19 47 Z"/>
+<path d="M81 47 L59 43 C55 47 54 53 56 60 C59 66 65 68 72 66 C79 63 82 56 81 47 Z"/>
+<path d="M50 63 L57 79 L51 81 L50 77 L49 81 L43 79 Z"/>
+</g>
+<g fill="none" stroke="#000" stroke-width="2.5" opacity=".35" filter="url(#b1)">
+<path d="M19 47 L41 43 C45 47 46 53 44 60 C41 66 35 68 28 66 C21 63 18 56 19 47 Z"/>
+<path d="M81 47 L59 43 C55 47 54 53 56 60 C59 66 65 68 72 66 C79 63 82 56 81 47 Z"/>
+</g>
+</svg>

@@ -1,0 +1,9 @@
+﻿DEADHUNT REMASTERED - AVISO LEGAL
+
+Deadhunt Remastered é um mod de fã gratuito e não oficial criado por REPTIX. Não tem vínculo com a REL Games, a Valve ou qualquer outra empresa, nem é patrocinado ou aprovado por elas. Deadhunt e seu conteúdo pertencem a seus respectivos donos; este mod não contém arquivos do jogo e requer uma cópia legítima do jogo.
+
+O mod é fornecido "NO ESTADO EM QUE SE ENCONTRA", sem garantia de qualquer tipo, expressa ou implícita. Você o instala e usa por sua conta e risco. Em nenhuma hipótese o autor será responsável por danos, perda de dados, falhas do computador ou do jogo, ou qualquer outro prejuízo decorrente de sua instalação ou uso.
+
+Os componentes de terceiros incluídos (DXVK, OpenAL Soft, SMAA, AMD CAS, fontes e ícones) são distribuídos sob suas próprias licenças, que estão na pasta DeadhuntFX\licencias.
+
+Ao continuar, você confirma que leu e aceita estes termos.

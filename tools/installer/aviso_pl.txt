@@ -1,0 +1,9 @@
+﻿DEADHUNT REMASTERED - INFORMACJA PRAWNA
+
+Deadhunt Remastered to darmowa, nieoficjalna modyfikacja fanowska stworzona przez REPTIX. Nie jest powiązana z REL Games, Valve ani żadną inną firmą, ani przez nie sponsorowana czy zatwierdzona. Deadhunt i jego zawartość należą do ich właścicieli; ta modyfikacja nie zawiera plików gry i wymaga legalnej kopii gry.
+
+Modyfikacja jest udostępniana „W STANIE, W JAKIM JEST”, bez jakichkolwiek gwarancji, wyraźnych ani dorozumianych. Instalujesz ją i używasz na własne ryzyko. Autor w żadnym wypadku nie ponosi odpowiedzialności za szkody, utratę danych, nieprawidłowe działanie komputera lub gry ani jakiekolwiek inne straty wynikające z jej instalacji lub użytkowania.
+
+Dołączone komponenty innych firm (DXVK, OpenAL Soft, SMAA, AMD CAS, czcionki i ikony) są rozpowszechniane na własnych licencjach, które znajdują się w folderze DeadhuntFX\licencias.
+
+Kontynuując, potwierdzasz zapoznanie się z tymi warunkami i ich akceptację.

@@ -1,0 +1,52 @@
+DEADHUNT REMASTERED
+===================
+
+ES  Remasterizado por REPTIX - https://steamcommunity.com/id/reptilemk/
+EN  Remastered by REPTIX - https://steamcommunity.com/id/reptilemk/
+RU  Ремастер от REPTIX - https://steamcommunity.com/id/reptilemk/
+
+Deadhunt (c) 2005 REL Games. Todos los derechos reservados / All rights reserved.
+Este mod no incluye archivos del juego: modifica la copia instalada del jugador.
+This mod ships no game files: it modifies the player's own installed copy.
+Este mod no está afiliado ni respaldado por REL Games ni por Valve.
+This mod is not affiliated with or endorsed by REL Games or Valve.
+
+
+COMPONENTES DE TERCEROS / THIRD-PARTY COMPONENTS
+-------------------------------------------------
+
+DXVK (dxvk_d3d9.dll) - https://github.com/doitsujin/dxvk
+  zlib/libpng license.
+  Copyright (c) 2017-2021 Philip Rebohle
+  Copyright (c) 2019-2021 Joshua Ashton
+  This software is provided 'as-is', without any express or implied warranty. In no event will
+  the authors be held liable for any damages arising from the use of this software. Permission is
+  granted to anyone to use this software for any purpose, including commercial applications, and
+  to alter it and redistribute it freely, subject to the following restrictions:
+  1. The origin of this software must not be misrepresented; you must not claim that you wrote the
+     original software. If you use this software in a product, an acknowledgment in the product
+     documentation would be appreciated but is not required.
+  2. Altered source versions must be plainly marked as such, and must not be misrepresented as
+     being the original software.
+  3. This notice may not be removed or altered from any source distribution.
+
+OpenAL Soft 1.25.2 (OpenAL32.dll) - https://github.com/kcat/openal-soft
+  GNU LGPL 2.1 or later. Full text: OpenAL-Soft_LICENCIA.txt.
+  Source code / código fuente: https://github.com/kcat/openal-soft/releases/tag/1.25.2
+
+SMAA - Jorge Jimenez, Jose I. Echevarria, Belen Masia, Fernando Navarro, Diego Gutierrez.
+  MIT license. See SMAA_LICENSE.txt.
+
+AMD FidelityFX CAS - Advanced Micro Devices, Inc. MIT license. See CAS_LICENSE.txt.
+
+Fuentes / Fonts: Oxanium (Severin Meyer) and Oswald (Vernon Adams and others).
+  SIL Open Font License 1.1. See OFL-Oxanium.txt and OFL-Oswald.txt.
+
+Iconos de armas / Weapon icons
+  Uzi: Delapouite, game-icons.net, CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/)
+  Desert Eagle: Skoll, game-icons.net, CC BY 3.0
+  M16, pump-action shotgun, M1 Garand: OpenClipart via OpenGameArt, CC0
+  M60, Jackhammer, calavera / skull: dibujados para este mod / drawn for this mod
+
+Steam and the Steam logo are trademarks and/or registered trademarks of Valve Corporation in the
+U.S. and/or other countries.

@@ -1,0 +1,35 @@
+# English (ASCII): only the original texts that needed fixing (grammar, typos, a stray Cyrillic "O" in 200).
+# Every other line keeps the game's own text. Ids as in GUILocalize.csv / Localize.csv; "^" is a line break.
+GUI = {
+    "81": " II. Arachnids",
+}
+LOC = {
+    "39": "Controls",
+    "50": "Please note that you move forward 20% faster^than backward or sideways.^This is an important part of the game's tactics.^When you move forward, you are harder to run down.",
+    "51": "You can pick up bonuses by stepping on them^or by placing the cursor over them^and pressing E or the right mouse button.^Note that you cannot pick up bonuses that are too far away.",
+    "52": "Now practice picking up bonuses.^Try to collect 5 more grenades.",
+    "53": "Let's get down to practice!^Use any weapon to destroy the attacking zombies.^And don't forget about the radar!",
+    "55": "In this tutorial you will learn the controls^and how to pick up bonuses and grenades.",
+    "58": "Let's take a close look at the screen.",
+    "61": "Look at the upper left corner of the screen.^Under the health indicator you can see the rune icon;^the number next to it shows how many more runes you can pick up^(it differs from level to level).^If this number is zero, no more runes will appear.",
+    "62": "You can carry a limited number of runes,^so it's not a good idea to pick up every rune you find.^You had better plan which runes, and how many of them,^you will collect.",
+    "64": "As you can see, your speed has increased significantly.",
+    "66": "There are action bonuses (healing, grenades)^and time-limited bonuses (double damage, sprint).^Active time-limited bonuses are displayed^under the rune icon on the left side of the screen.^The remaining time of each bonus is shown next to it.",
+    "67": "Now let's look at the bonuses and try to pick them up.^Note that bonuses disappear after 20 seconds^and runes after 30 seconds.",
+    "68": "The effect is especially noticeable^when you collect many runes of the same kind.",
+    "69": "In the upper right corner, below the ammo indicator,^a grenade icon and a number show^how many grenades you have left.",
+    "70": "The grenade is a very powerful weapon.^Mind that a close explosion will hurt you!",
+    "72": "All collected runes stay in effect until you complete the level.^Click the right mouse button or press E to pick up a rune.",
+    "79": "Use the radar to locate and pick up 5 grenades.",
+    "80": "In the bottom left corner you can see the radar.^It shows the location of monsters, runes and bonuses.^Each kind of monster has its own color: orange - close combat,^yellow - long-range combat, red - especially dangerous, etc.",
+    "96": "Congratulations, your training is over!^Now it's time to get down to action^and destroy a couple of hordes of monsters!",
+    "121": "Defense +10%",
+    "161": "Submachine Gun",
+    "164": "Machine Gun",
+    "180": "For each one you kill, others will come.",
+    "191": "Shoot carefully and watch your health.",
+    "200": "Heavy guards are coming! Prepare to die.",
+    "209": "The Skeleton Lord has 4 lives. Take them all away.",
+    "365": "The curse works while at least five skeletons are alive.",
+    "367": "Collect three artifacts: together they can heal you.",
+}
