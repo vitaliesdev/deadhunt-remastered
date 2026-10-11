@@ -1,6 +1,6 @@
 <div align="center">
 
-<h1>Deadhunt Remastered</h1>
+<img src="assets/menu_logo.png" alt="Deadhunt Remastered" width="420">
 
 <p><strong>A free fan mod that makes Deadhunt look and run better on modern PCs.</strong></p>
 
