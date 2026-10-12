@@ -6,8 +6,11 @@ for /f "usebackq tokens=*" %%i in (`"%VSWHERE%" -latest -products * -requires Mi
 if not defined VS (echo Visual Studio with the C++ tools was not found & exit /b 1)
 call "%VS%\VC\Auxiliary\Build\vcvars32.bat" >nul
 cd /d "%~dp0"
-set FXC=fxc
 where fxc >nul 2>nul || (echo fxc.exe ^(Windows SDK^) was not found & exit /b 1)
+rem DeadhuntFX.hlsl includes "DeadhuntFX/SMAA.hlsl" (where the game folder has it at run time)
+if not exist build\shaderinc\DeadhuntFX mkdir build\shaderinc\DeadhuntFX
+copy /y third_party\smaa\SMAA.hlsl build\shaderinc\DeadhuntFX\SMAA.hlsl >nul || exit /b 1
+set FXC=fxc /I build\shaderinc
 for %%E in (PS_FXAA PS_Bright PS_Down PS_BlurH PS_BlurV PS_Final PS_SMAAEdges PS_SMAAWeights PS_SMAABlend PS_AO PS_AOBlurH PS_AOBlurV PS_Depth PS_RayMask PS_RayBlur PS_StoreZ PS_FlashMask PS_FlashReduce PS_One PS_Shadow) do (
   %FXC% /nologo /T ps_3_0 /E %%E /O3 /Fo NUL DeadhuntFX.hlsl || exit /b 1
 )

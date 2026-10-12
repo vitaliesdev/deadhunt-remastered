@@ -158,5 +158,5 @@ lines.append("static const char* const kLangName[LANG_COUNT][LANG_COUNT] = {   /
 for cur in range(N):
     lines.append("    { %s }," % ", ".join(esc(n, ENC[cur]) for n in LANG_NAMES[cur]))
 lines += ["};", "", "static int g_lang = LANG_ES;", "static const char* Tr(int id) { return kStr[id][g_lang]; }", ""]
-open(sys.argv[1], "w", encoding="ascii", newline="\n").write("\n".join(lines))
+open(sys.argv[1], "w", encoding="ascii", newline="\r\n").write("\n".join(lines))   # Windows line ends, like a git checkout
 print(len(S), "textos,", N, "idiomas")
