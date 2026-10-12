@@ -1,24 +1,8 @@
-# build outputs
+# everything the build produces: build\obj, build\bin, build\generated, build\dist, build\release
 /build/
-/dist/
-/d3d9.dll
-*.obj
-*.lib
-*.exp
-*.pdb
-*.exe
 __pycache__/
+*.pyc
 
-# generated from the game's data on each machine (tools/generate.py), never committed
-/DeadhuntFX/
-
-# official upstream binaries, downloaded and hash-checked by tools/fetch_deps.py
+# official upstream binaries, downloaded and hash-checked by tools/build/fetch_deps.py
 /third_party/dxvk/
 /third_party/openal-soft/soft_oal.dll
-
-# obsolete tools from earlier approaches
-/tools/installer/setup.*
-/tools/installer/build_setup.bat
-/tools/pack.py
-/tools/build_lang.py
-/tools/font_es.py

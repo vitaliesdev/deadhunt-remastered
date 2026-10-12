@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/menu_logo.png" alt="Deadhunt Remastered" width="420">
+<img src="assets/menu/menu_logo.png" alt="Deadhunt Remastered" width="420">
 
 <p><strong>A free fan mod that makes Deadhunt look and run better on modern PCs.</strong></p>
 
@@ -52,11 +52,13 @@ Don't want to trust a prebuilt installer? You can build the exact same installer
 build_release.bat "C:\Program Files (x86)\Steam\steamapps\common\Deadhunt"
 ```
 That single command:
-1. `tools\fetch_deps.py` downloads the official **DXVK 3.1.1** and **OpenAL Soft 1.25.2** releases from their GitHub pages and checks their SHA-256 (they are shipped unmodified).
-2. `tools\generate.py` reads your game folder (read only), checks that the files are the original ones, and generates into `build\` everything derived from the game's data: the extended fonts, the translated texts and the HUD atlas.
-3. `build.bat` compiles `d3d9.dll` and checks the shaders.
-4. `tools\stage.py` collects the files into `dist\`.
-5. Inno Setup builds `DeadhuntRemastered_Setup_v<version>.exe` (version in the `VERSION` file).
+1. `tools\build\fetch_deps.py` downloads the official **DXVK 3.1.1** and **OpenAL Soft 1.25.2** releases from their GitHub pages and checks their SHA-256 (they are shipped unmodified).
+2. `tools\build\generate.py` reads your game folder (read only), checks that the files are the original ones, and generates into `build\generated\` everything derived from the game's data: the extended fonts, the translated texts and the HUD atlas.
+3. `build.bat` compiles `build\bin\d3d9.dll` and checks the shaders.
+4. `tools\build\stage.py` collects the files into `build\dist\`.
+5. Inno Setup builds `build\release\DeadhuntRemastered_Setup_v<version>.exe` (version in the `VERSION` file).
+
+Everything the build produces goes to `build\`, which is not part of the repository.
 
 </details>
 
@@ -64,13 +66,18 @@ That single command:
 
 | Path | What |
 |---|---|
-| `DeadhuntFX.cpp`, `*.inl`, `DeadhuntFX.hlsl` | The mod: Direct3D 9 proxy, effects, HUD, menus, terrain, input, languages |
-| `ExePatchData.inl` | Small in-memory patches of `Deadhunt.exe` (applied at start-up, never written to disk) |
-| `DeadhuntFX.ini`, `dxvk.conf` | Default settings shipped by the installer |
-| `tools\` | Build tools: data generators, translations (`tools\lang`, `es_*.py`), installer script |
-| `hud\` | HUD icons and fonts (Oxanium, Oswald: SIL Open Font License) |
-| `assets\` | Main menu art (upscaled from the original game art) and logo |
-| `third_party\` | SMAA and AMD FidelityFX CAS sources, OpenAL Soft licence |
+| `src\` | The mod (`d3d9.dll`), split by layer. See [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) |
+| `src\core\` | Shared basics: logging, settings, hooking helpers |
+| `src\backend\` | Engine side: Direct3D 9 proxy and hooks (`d3d9`), rendering and effects (`render`), game integration and in-memory patches (`game`), input (`input`) |
+| `src\frontend\` | What the player sees: new HUD (`hud`), menus and Advanced tab (`menu`), mod texts (`l10n`) |
+| `src\debug\` | Developer captures (F11) |
+| `shaders\` | HLSL effects, compiled at run time |
+| `config\` | Default settings shipped by the installer (`DeadhuntFX.ini`, `dxvk.conf`) |
+| `assets\` | Menu art and logo (`menu`), HUD icons (`hud`), fonts (`fonts`, SIL Open Font License) |
+| `localization\` | Translations: game texts per language (`game`) and the mod's own texts (`mod`) |
+| `installer\` | Inno Setup script, legal notices, credits and installer images |
+| `tools\` | Python build tools: pipeline (`build`), data generators (`generators`), shared helpers (`lib`), maintainer tools (`dev`) |
+| `third_party\` | SMAA and AMD FidelityFX CAS sources, OpenAL Soft licence; DXVK and OpenAL Soft binaries are downloaded |
 
 Not in the repository: anything taken from the game's files (fonts, texts) and the upstream binaries. They are generated or downloaded by the build.
 
